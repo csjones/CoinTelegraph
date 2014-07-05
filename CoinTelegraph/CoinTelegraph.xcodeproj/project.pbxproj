@@ -44,6 +44,7 @@
 		3FE80BC81967C5B000947774 /* NSDictionary+FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BC71967C5B000947774 /* NSDictionary+FeedItem.m */; };
 		3FE80BCB1967D39C00947774 /* UITableViewCell+FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BCA1967D39C00947774 /* UITableViewCell+FeedCell.m */; };
 		3FE80BCE196880C200947774 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BCD196880C200947774 /* XMLDictionary.m */; };
+		3FE80BD11968946500947774 /* ArticleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BD01968946500947774 /* ArticleVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,8 @@
 		3FE80BCA1967D39C00947774 /* UITableViewCell+FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+FeedCell.m"; path = "Categories/UITableViewCell+FeedCell.m"; sourceTree = "<group>"; };
 		3FE80BCC196880C200947774 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDictionary.h; path = XMLDictionary/XMLDictionary.h; sourceTree = "<group>"; };
 		3FE80BCD196880C200947774 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDictionary.m; path = XMLDictionary/XMLDictionary.m; sourceTree = "<group>"; };
+		3FE80BCF1968946500947774 /* ArticleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleVC.h; path = Controllers/ArticleVC.h; sourceTree = "<group>"; };
+		3FE80BD01968946500947774 /* ArticleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleVC.m; path = Controllers/ArticleVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +295,8 @@
 		3FE80BB31967AF2200947774 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3FE80BCF1968946500947774 /* ArticleVC.h */,
+				3FE80BD01968946500947774 /* ArticleVC.m */,
 				3FE80BB41967AF6500947774 /* RssFeedVC.h */,
 				3FE80BB51967AF6500947774 /* RssFeedVC.m */,
 			);
@@ -430,6 +435,7 @@
 				3FE80B9D1967AA5900947774 /* AFHTTPRequestOperation.m in Sources */,
 				3FE80BAA1967AA5900947774 /* UIImageView+AFNetworking.m in Sources */,
 				3FE80BB91967B09A00947774 /* RssFeedModel.m in Sources */,
+				3FE80BD11968946500947774 /* ArticleVC.m in Sources */,
 				3FE80B9E1967AA5900947774 /* AFHTTPRequestOperationManager.m in Sources */,
 				3FE80BAB1967AA5900947774 /* UIProgressView+AFNetworking.m in Sources */,
 				3FE80BA01967AA5900947774 /* AFNetworkReachabilityManager.m in Sources */,
