@@ -41,6 +41,9 @@
 		3FE80BB91967B09A00947774 /* RssFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BB81967B09A00947774 /* RssFeedModel.m */; };
 		3FE80BBF1967B37100947774 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80BBB1967B37100947774 /* Main_iPad.storyboard */; };
 		3FE80BC01967B37100947774 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80BBD1967B37100947774 /* Main_iPhone.storyboard */; };
+		3FE80BC41967BC4200947774 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BC31967BC4200947774 /* XMLDictionary.m */; };
+		3FE80BC81967C5B000947774 /* NSDictionary+FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BC71967C5B000947774 /* NSDictionary+FeedItem.m */; };
+		3FE80BCB1967D39C00947774 /* UITableViewCell+FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80BCA1967D39C00947774 /* UITableViewCell+FeedCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,12 @@
 		3FE80BB81967B09A00947774 /* RssFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssFeedModel.m; path = Models/RssFeedModel.m; sourceTree = "<group>"; };
 		3FE80BBC1967B37100947774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		3FE80BBE1967B37100947774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3FE80BC21967BC4200947774 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		3FE80BC31967BC4200947774 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		3FE80BC61967C5B000947774 /* NSDictionary+FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+FeedItem.h"; path = "Categories/NSDictionary+FeedItem.h"; sourceTree = "<group>"; };
+		3FE80BC71967C5B000947774 /* NSDictionary+FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+FeedItem.m"; path = "Categories/NSDictionary+FeedItem.m"; sourceTree = "<group>"; };
+		3FE80BC91967D39C00947774 /* UITableViewCell+FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+FeedCell.h"; path = "Categories/UITableViewCell+FeedCell.h"; sourceTree = "<group>"; };
+		3FE80BCA1967D39C00947774 /* UITableViewCell+FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+FeedCell.m"; path = "Categories/UITableViewCell+FeedCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +158,7 @@
 				3FE80B3E1967A7BB00947774 /* Frameworks */,
 				3FE80B3D1967A7BB00947774 /* Products */,
 				3FE80B8B1967AA5900947774 /* UIKit+AFNetworking */,
+				3FE80BC11967BC4200947774 /* XMLDictionary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +187,7 @@
 			children = (
 				3FE80B4E1967A7BB00947774 /* AppDelegate.h */,
 				3FE80B4F1967A7BB00947774 /* AppDelegate.m */,
+				3FE80BC51967C54B00947774 /* Categories */,
 				3FE80BB31967AF2200947774 /* Controllers */,
 				3FE80BAE1967AB0100947774 /* Models */,
 				3FE80B5A1967A7BB00947774 /* Images.xcassets */,
@@ -297,6 +308,27 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		3FE80BC11967BC4200947774 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80BC21967BC4200947774 /* XMLDictionary.h */,
+				3FE80BC31967BC4200947774 /* XMLDictionary.m */,
+			);
+			name = XMLDictionary;
+			path = ../Vendors/XMLDictionary;
+			sourceTree = "<group>";
+		};
+		3FE80BC51967C54B00947774 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80BC61967C5B000947774 /* NSDictionary+FeedItem.h */,
+				3FE80BC71967C5B000947774 /* NSDictionary+FeedItem.m */,
+				3FE80BC91967D39C00947774 /* UITableViewCell+FeedCell.h */,
+				3FE80BCA1967D39C00947774 /* UITableViewCell+FeedCell.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,8 +434,11 @@
 				3FE80BAB1967AA5900947774 /* UIProgressView+AFNetworking.m in Sources */,
 				3FE80BA01967AA5900947774 /* AFNetworkReachabilityManager.m in Sources */,
 				3FE80BA41967AA5900947774 /* AFURLResponseSerialization.m in Sources */,
+				3FE80BC81967C5B000947774 /* NSDictionary+FeedItem.m in Sources */,
 				3FE80BA21967AA5900947774 /* AFURLConnectionOperation.m in Sources */,
 				3FE80BA91967AA5900947774 /* UIButton+AFNetworking.m in Sources */,
+				3FE80BC41967BC4200947774 /* XMLDictionary.m in Sources */,
+				3FE80BCB1967D39C00947774 /* UITableViewCell+FeedCell.m in Sources */,
 				3FE80BA71967AA5900947774 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				3FE80BA11967AA5900947774 /* AFSecurityPolicy.m in Sources */,
 				3FE80BB21967AE2100947774 /* CoinTelegraphDotComModel.m in Sources */,
