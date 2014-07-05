@@ -11,7 +11,7 @@
 @implementation CoinTelegraphDotComModel
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark - NSObject
+#pragma mark    -   NSObject
 
 - ( id )initWithBaseURL:( NSURL* )url
 {
@@ -21,10 +21,25 @@
         
         self.responseSerializer = [AFXMLParserResponseSerializer serializer];
         
-        self.responseSerializer.acceptableContentTypes = [[NSSet alloc] initWithArray:@[ @"text/plain" ]];
+        self.responseSerializer.acceptableContentTypes = [[NSSet alloc] initWithArray:@[ @"application/rss+xml" ]];
     }
     
     return self;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark    -   Methods
+
+- ( void )getRssFeed:( NSString* )url success:( void ( ^ )( id file ) )success failure:( void ( ^ )( NSError* error ) )failure
+{
+    [self GET:url
+   parameters:nil
+      success:^( AFHTTPRequestOperation* operation, id responseObject ) {
+          success( responseObject );
+      }
+      failure:^( AFHTTPRequestOperation* operation, NSError* error) {
+          failure( error );
+      }];
 }
 
 @end

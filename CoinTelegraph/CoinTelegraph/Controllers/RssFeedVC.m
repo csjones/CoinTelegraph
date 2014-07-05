@@ -7,6 +7,9 @@
 //
 
 #import "RssFeedVC.h"
+#import "XMLDictionary.h"
+#import "NSDictionary+FeedItem.h"
+#import "CoinTelegraphDotComModel.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark    -   RssFeedVC Category Interface
@@ -27,8 +30,29 @@
 {
     if ( self = [super initWithCoder:aDecoder] )
     {
-        _tableModel = [[RssFeedModel alloc] init];
+        __weak RssFeedVC* weakSelf = self;
+        
+        CoinTelegraphDotComModel* sourceModel = [[CoinTelegraphDotComModel alloc] initWithBaseURL:[NSURL URLWithString:@"http://cointelegraph.com/"]];
+        
+        [sourceModel getRssFeed:@"rss"
+                        success:^( id file ) {
+                            weakSelf.tableModel = [[RssFeedModel alloc] initWithFeedItems:[[NSDictionary dictionaryWithXMLParser:file] feedItems]];
+                            
+                            weakSelf.tableView.dataSource = weakSelf.tableModel;
+                            
+                            [weakSelf.tableView reloadData];
+                        }
+                        failure:^( NSError* error ) {
+                            NSLog(@"error %@", error);
+                        }];
     }
+    
+    return self;
+}
+
+- ( BOOL )prefersStatusBarHidden
+{
+    return YES;
 }
 
 - ( void )didReceiveMemoryWarning
