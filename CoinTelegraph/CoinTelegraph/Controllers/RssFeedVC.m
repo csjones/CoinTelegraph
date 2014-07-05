@@ -41,6 +41,14 @@
                             weakSelf.tableView.dataSource = weakSelf.tableModel;
                             
                             [weakSelf.tableView reloadData];
+                            
+                            [UIView animateWithDuration:1
+                                             animations:^{
+                                                 weakSelf.splashView.alpha = .0;
+                                             }
+                                             completion:^( BOOL finished ) {
+                                                 [weakSelf.splashView removeFromSuperview];
+                                             }];
                         }
                         failure:^( NSError* error ) {
                             NSLog(@"error %@", error);

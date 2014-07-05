@@ -17,6 +17,7 @@
 #pragma mark    -   Properties
 
 @property ( weak, nonatomic )   IBOutlet    UITableView*    tableView;
+@property ( weak, nonatomic )   IBOutlet    UIImageView*    splashView;
 @property ( strong, nonatomic)              RssFeedModel*   tableModel;
 
 @end
