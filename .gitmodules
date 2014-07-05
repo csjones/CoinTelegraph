@@ -2,3 +2,7 @@
 	path = Vendors/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking
 	ignore = dirty
+[submodule "Vendors/XMLDictionary"]
+	path = Vendors/XMLDictionary
+	url = https://github.com/nicklockwood/XMLDictionary
+	ignore = dirty
