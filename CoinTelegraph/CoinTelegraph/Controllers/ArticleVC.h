@@ -6,8 +6,12 @@
 //  Copyright (c) 2014 GigaBitcoin, LLC. All rights reserved.
 //
 
-@interface ArticleVC : UIViewController
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark    -   ArticleVC Class Interface
 
-@property ( weak, nonatomic )   IBOutlet    UIWebView* webView;
+@interface ArticleVC : UIViewController < UIWebViewDelegate >
+
+@property ( weak, nonatomic )   IBOutlet    UIWebView*      webView;
+@property ( strong, nonatomic )             NSURLRequest*   urlRequest;
 
 @end

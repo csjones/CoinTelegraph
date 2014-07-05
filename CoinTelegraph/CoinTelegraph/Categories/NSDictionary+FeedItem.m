@@ -23,6 +23,11 @@
     return self[ @"title" ];
 }
 
+- ( NSURL* )urlForFeedItemLink
+{
+    return [[NSURL alloc] initWithString:self[ @"link" ]];
+}
+
 - ( NSString* )feedItemImageUrlForWidth:( NSUInteger )width
 {
 // "http://cointelegraph.com/images/528_aHR0cDovL2NvaW50ZWxlZ3JhcGguY29tL3N0b3JhZ2UvdXBsb2Fkcy92aWV3L2NmYjZhZTgwNGE5NTE0ODUxNzQ0M2FkNDMxOTdlMTljLnBuZw==.jpg";

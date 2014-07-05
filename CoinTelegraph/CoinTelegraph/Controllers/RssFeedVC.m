@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 GigaBitcoin, LLC. All rights reserved.
 //
 
+#import "ArticleVC.h"
 #import "RssFeedVC.h"
 #import "XMLDictionary.h"
 #import "NSDictionary+FeedItem.h"
@@ -76,7 +77,11 @@
 
 - ( void )tableView:( UITableView* )tableView didSelectRowAtIndexPath:( NSIndexPath* )indexPath
 {
+    ArticleVC* article = [self.storyboard instantiateViewControllerWithIdentifier:@"Article"];
     
+    article.urlRequest = [[NSURLRequest alloc] initWithURL:[_tableModel.feedItems[ indexPath.row ] urlForFeedItemLink]];
+        
+    [self.navigationController pushViewController:article animated:YES];
 }
 
 @end

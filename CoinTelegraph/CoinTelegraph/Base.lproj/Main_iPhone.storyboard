@@ -78,14 +78,29 @@
         <!--ArticleVC-->
         <scene sceneID="ked-rV-9hj">
             <objects>
-                <viewController id="Qlu-pA-qME" customClass="ArticleVC" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="0tZ-5N-vlV">
+                <viewController storyboardIdentifier="Article" id="Qlu-pA-qME" customClass="ArticleVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PFr-vt-9iu"/>
+                        <viewControllerLayoutGuide type="bottom" id="gEp-Fy-pcH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R4W-4V-YFX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </webView>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uO0-ga-7vR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Qlu-pA-qME" id="kdV-8B-t3h"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="webView" destination="0tZ-5N-vlV" id="gGl-vd-oVE"/>
+                        <outlet property="webView" destination="uO0-ga-7vR" id="Yve-Nw-tTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbl-3e-08k" userLabel="First Responder" sceneMemberID="firstResponder"/>

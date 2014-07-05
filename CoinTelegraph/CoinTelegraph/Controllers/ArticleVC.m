@@ -8,25 +8,31 @@
 
 #import "ArticleVC.h"
 
-@interface ArticleVC ()
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark    -   ArticleVC Category Interface
+
+@interface ArticleVC ( )
 
 @end
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark    -   ArticleVC Class Implementation
+
 @implementation ArticleVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark    -   UIViewController
+
+- ( void )viewWillAppear:( BOOL )animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    [super viewWillAppear:animated];
+    
+    [_webView loadRequest:_urlRequest];
 }
 
-- (void)viewDidLoad
+- ( BOOL )prefersStatusBarHidden
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +41,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark    -   UIWebViewDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- ( void )webView:( UIWebView* )webView didFailLoadWithError:( NSError* )error
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSLog(@"Error : %@", error);
 }
-*/
+
+- ( BOOL )webView:( UIWebView* )webView shouldStartLoadWithRequest:( NSURLRequest* )request navigationType:( UIWebViewNavigationType )navigationType
+{
+    NSLog(@"shouldStartLoadWithRequest");
+    
+    return YES;
+}
+
+- ( void )webViewDidFinishLoad:( UIWebView* )webView
+{
+    NSLog(@"webViewDidFinishLoad");
+}
 
 @end

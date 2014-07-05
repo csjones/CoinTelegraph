@@ -15,6 +15,8 @@
 
 - ( NSString* )feedItemTitle;
 
+- ( NSURL* )urlForFeedItemLink;
+
 - ( NSString* )feedItemImageUrlForWidth:( NSUInteger )width;
 
 @end
