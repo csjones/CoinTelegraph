@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE80B401967A7BB00947774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE80B3F1967A7BB00947774 /* Foundation.framework */; };
+		3FE80B421967A7BB00947774 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE80B411967A7BB00947774 /* CoreGraphics.framework */; };
+		3FE80B441967A7BB00947774 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE80B431967A7BB00947774 /* UIKit.framework */; };
+		3FE80B4A1967A7BB00947774 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80B481967A7BB00947774 /* InfoPlist.strings */; };
+		3FE80B4C1967A7BB00947774 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80B4B1967A7BB00947774 /* main.m */; };
+		3FE80B501967A7BB00947774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80B4F1967A7BB00947774 /* AppDelegate.m */; };
+		3FE80B531967A7BB00947774 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80B511967A7BB00947774 /* Main_iPhone.storyboard */; };
+		3FE80B561967A7BB00947774 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80B541967A7BB00947774 /* Main_iPad.storyboard */; };
+		3FE80B591967A7BB00947774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80B581967A7BB00947774 /* ViewController.m */; };
+		3FE80B5B1967A7BB00947774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80B5A1967A7BB00947774 /* Images.xcassets */; };
+		3FE80B621967A7BB00947774 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE80B611967A7BB00947774 /* XCTest.framework */; };
+		3FE80B631967A7BB00947774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE80B3F1967A7BB00947774 /* Foundation.framework */; };
+		3FE80B641967A7BB00947774 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE80B431967A7BB00947774 /* UIKit.framework */; };
+		3FE80B6C1967A7BB00947774 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80B6A1967A7BB00947774 /* InfoPlist.strings */; };
+		3FE80B6E1967A7BB00947774 /* CoinTelegraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE80B6D1967A7BB00947774 /* CoinTelegraphTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FE80B651967A7BB00947774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FE80B341967A7BB00947774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE80B3B1967A7BB00947774;
+			remoteInfo = CoinTelegraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FE80B3C1967A7BB00947774 /* CoinTelegraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTelegraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE80B3F1967A7BB00947774 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FE80B411967A7BB00947774 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FE80B431967A7BB00947774 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FE80B471967A7BB00947774 /* CoinTelegraph-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoinTelegraph-Info.plist"; sourceTree = "<group>"; };
+		3FE80B491967A7BB00947774 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FE80B4B1967A7BB00947774 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FE80B4D1967A7BB00947774 /* CoinTelegraph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoinTelegraph-Prefix.pch"; sourceTree = "<group>"; };
+		3FE80B4E1967A7BB00947774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FE80B4F1967A7BB00947774 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FE80B521967A7BB00947774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3FE80B551967A7BB00947774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3FE80B571967A7BB00947774 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FE80B581967A7BB00947774 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FE80B5A1967A7BB00947774 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3FE80B601967A7BB00947774 /* CoinTelegraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinTelegraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE80B611967A7BB00947774 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3FE80B691967A7BB00947774 /* CoinTelegraphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoinTelegraphTests-Info.plist"; sourceTree = "<group>"; };
+		3FE80B6B1967A7BB00947774 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FE80B6D1967A7BB00947774 /* CoinTelegraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinTelegraphTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FE80B391967A7BB00947774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE80B421967A7BB00947774 /* CoreGraphics.framework in Frameworks */,
+				3FE80B441967A7BB00947774 /* UIKit.framework in Frameworks */,
+				3FE80B401967A7BB00947774 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE80B5D1967A7BB00947774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE80B621967A7BB00947774 /* XCTest.framework in Frameworks */,
+				3FE80B641967A7BB00947774 /* UIKit.framework in Frameworks */,
+				3FE80B631967A7BB00947774 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FE80B331967A7BB00947774 = {
+			isa = PBXGroup;
+			children = (
+				3FE80B451967A7BB00947774 /* CoinTelegraph */,
+				3FE80B671967A7BB00947774 /* CoinTelegraphTests */,
+				3FE80B3E1967A7BB00947774 /* Frameworks */,
+				3FE80B3D1967A7BB00947774 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FE80B3D1967A7BB00947774 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80B3C1967A7BB00947774 /* CoinTelegraph.app */,
+				3FE80B601967A7BB00947774 /* CoinTelegraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FE80B3E1967A7BB00947774 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80B3F1967A7BB00947774 /* Foundation.framework */,
+				3FE80B411967A7BB00947774 /* CoreGraphics.framework */,
+				3FE80B431967A7BB00947774 /* UIKit.framework */,
+				3FE80B611967A7BB00947774 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FE80B451967A7BB00947774 /* CoinTelegraph */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80B4E1967A7BB00947774 /* AppDelegate.h */,
+				3FE80B4F1967A7BB00947774 /* AppDelegate.m */,
+				3FE80B511967A7BB00947774 /* Main_iPhone.storyboard */,
+				3FE80B541967A7BB00947774 /* Main_iPad.storyboard */,
+				3FE80B571967A7BB00947774 /* ViewController.h */,
+				3FE80B581967A7BB00947774 /* ViewController.m */,
+				3FE80B5A1967A7BB00947774 /* Images.xcassets */,
+				3FE80B461967A7BB00947774 /* Supporting Files */,
+			);
+			path = CoinTelegraph;
+			sourceTree = "<group>";
+		};
+		3FE80B461967A7BB00947774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80B471967A7BB00947774 /* CoinTelegraph-Info.plist */,
+				3FE80B481967A7BB00947774 /* InfoPlist.strings */,
+				3FE80B4B1967A7BB00947774 /* main.m */,
+				3FE80B4D1967A7BB00947774 /* CoinTelegraph-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FE80B671967A7BB00947774 /* CoinTelegraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80B6D1967A7BB00947774 /* CoinTelegraphTests.m */,
+				3FE80B681967A7BB00947774 /* Supporting Files */,
+			);
+			path = CoinTelegraphTests;
+			sourceTree = "<group>";
+		};
+		3FE80B681967A7BB00947774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FE80B691967A7BB00947774 /* CoinTelegraphTests-Info.plist */,
+				3FE80B6A1967A7BB00947774 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FE80B3B1967A7BB00947774 /* CoinTelegraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE80B711967A7BB00947774 /* Build configuration list for PBXNativeTarget "CoinTelegraph" */;
+			buildPhases = (
+				3FE80B381967A7BB00947774 /* Sources */,
+				3FE80B391967A7BB00947774 /* Frameworks */,
+				3FE80B3A1967A7BB00947774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinTelegraph;
+			productName = CoinTelegraph;
+			productReference = 3FE80B3C1967A7BB00947774 /* CoinTelegraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FE80B5F1967A7BB00947774 /* CoinTelegraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE80B741967A7BB00947774 /* Build configuration list for PBXNativeTarget "CoinTelegraphTests" */;
+			buildPhases = (
+				3FE80B5C1967A7BB00947774 /* Sources */,
+				3FE80B5D1967A7BB00947774 /* Frameworks */,
+				3FE80B5E1967A7BB00947774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FE80B661967A7BB00947774 /* PBXTargetDependency */,
+			);
+			name = CoinTelegraphTests;
+			productName = CoinTelegraphTests;
+			productReference = 3FE80B601967A7BB00947774 /* CoinTelegraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE80B341967A7BB00947774 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "GigaBitcoin, LLC";
+				TargetAttributes = {
+					3FE80B5F1967A7BB00947774 = {
+						TestTargetID = 3FE80B3B1967A7BB00947774;
+					};
+				};
+			};
+			buildConfigurationList = 3FE80B371967A7BB00947774 /* Build configuration list for PBXProject "CoinTelegraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FE80B331967A7BB00947774;
+			productRefGroup = 3FE80B3D1967A7BB00947774 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FE80B3B1967A7BB00947774 /* CoinTelegraph */,
+				3FE80B5F1967A7BB00947774 /* CoinTelegraphTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE80B3A1967A7BB00947774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE80B561967A7BB00947774 /* Main_iPad.storyboard in Resources */,
+				3FE80B5B1967A7BB00947774 /* Images.xcassets in Resources */,
+				3FE80B531967A7BB00947774 /* Main_iPhone.storyboard in Resources */,
+				3FE80B4A1967A7BB00947774 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE80B5E1967A7BB00947774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE80B6C1967A7BB00947774 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE80B381967A7BB00947774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE80B591967A7BB00947774 /* ViewController.m in Sources */,
+				3FE80B501967A7BB00947774 /* AppDelegate.m in Sources */,
+				3FE80B4C1967A7BB00947774 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE80B5C1967A7BB00947774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE80B6E1967A7BB00947774 /* CoinTelegraphTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FE80B661967A7BB00947774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE80B3B1967A7BB00947774 /* CoinTelegraph */;
+			targetProxy = 3FE80B651967A7BB00947774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FE80B481967A7BB00947774 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE80B491967A7BB00947774 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FE80B511967A7BB00947774 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE80B521967A7BB00947774 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE80B541967A7BB00947774 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE80B551967A7BB00947774 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE80B6A1967A7BB00947774 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE80B6B1967A7BB00947774 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FE80B6F1967A7BB00947774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FE80B701967A7BB00947774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FE80B721967A7BB00947774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoinTelegraph/CoinTelegraph-Prefix.pch";
+				INFOPLIST_FILE = "CoinTelegraph/CoinTelegraph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FE80B731967A7BB00947774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoinTelegraph/CoinTelegraph-Prefix.pch";
+				INFOPLIST_FILE = "CoinTelegraph/CoinTelegraph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FE80B751967A7BB00947774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoinTelegraph.app/CoinTelegraph";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoinTelegraph/CoinTelegraph-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoinTelegraphTests/CoinTelegraphTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3FE80B761967A7BB00947774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoinTelegraph.app/CoinTelegraph";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoinTelegraph/CoinTelegraph-Prefix.pch";
+				INFOPLIST_FILE = "CoinTelegraphTests/CoinTelegraphTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FE80B371967A7BB00947774 /* Build configuration list for PBXProject "CoinTelegraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE80B6F1967A7BB00947774 /* Debug */,
+				3FE80B701967A7BB00947774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE80B711967A7BB00947774 /* Build configuration list for PBXNativeTarget "CoinTelegraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE80B721967A7BB00947774 /* Debug */,
+				3FE80B731967A7BB00947774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FE80B741967A7BB00947774 /* Build configuration list for PBXNativeTarget "CoinTelegraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE80B751967A7BB00947774 /* Debug */,
+				3FE80B761967A7BB00947774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE80B341967A7BB00947774 /* Project object */;
+}
