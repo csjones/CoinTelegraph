@@ -1,4 +1,4 @@
 CoinTelegraph
 =============
 
-iOS app for CoinTelegraph.com
+iOS app originally prototyped for CoinTelegraph.com
